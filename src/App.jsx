@@ -42,8 +42,9 @@ export default function App() {
   const upcount = () => {
     if (count < title.length - 1) {
       setCount(count + 1);
-      setWidth(width + 10);
-      setHeight(height + 10);
+      setWidth(width + 40);
+      setHeight(height + 30);
+    
     }
   };
 
@@ -95,7 +96,7 @@ export default function App() {
     content = (
       <div>
         <img src="https://media.tenor.com/q9jVc0C7wYQAAAAi/dudu-dudu-run.gif" alt="bye" width={500} />
-        <h1>LEAVING FOR GREATER AND BETTER THINGS</h1>
+        <h1>LEAVING YOU FOR GREATER AND BETTER THINGS</h1>
         <button onClick={reset}>Reset</button>
       </div>
     );
