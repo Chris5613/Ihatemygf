@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import "./index.css";
 import confetti from 'canvas-confetti';
 
@@ -62,16 +62,6 @@ export default function App() {
       origin: { y: 0.6 },
     });
   };
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (!clicked) { // Only auto-launch confetti if "Yes" hasn't been clicked
-        launchConfetti();
-      }
-    }, 4000); // Launch confetti every 4000 milliseconds (4 seconds)
-
-    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
-  }, [clicked]); // Add `clicked` as a dependency to re-evaluate the effect when it changes
 
   let content;
 
