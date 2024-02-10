@@ -80,7 +80,7 @@ export default function App() {
       </div>
       
     )
-  } else if (count < title.length) {
+  } else if (count < 11) {
     content = (
       <div className="main-container">
         <img src={gifs[count]} alt="animated character" width={300} />
